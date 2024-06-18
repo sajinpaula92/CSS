@@ -1,3 +1,7 @@
+
+
+
+
 p {
     /*Day 1 session 2*/ /* This is the comment format in CSS*/
     /*font-size: 64px;*/
@@ -23,6 +27,11 @@ body{
 
     /*---Element selectors--- are the first type of css selectors. It always selects and applies the code for all the contents of that same element. check the example below of paragraph element */
 
+    h2, h3,{/*This is group selection. we can select one ore more elements with a comma, in which we can give same values for them.*/
+
+        color: blue;
+    }
+
     p{
 
         color: purple;
@@ -34,5 +43,45 @@ body{
 
         color: gray;
     }
+
+
+    /*Day 2 session 2*/ 
+
+    /*---Id selectors--- are the third type of css selectors. We can use id names according to our wish but make sure it has some relation to the code we have. Id selectors always start with a hash symbol (#). Id names cannot be repeated in a file, it should be unique. When we use id selectors, they are more specific than a Element selector or a class selector, and so the rule of a id selector will be applied. It is not a good practice to use id's inside css.*/
+
+    #second{
+
+        font-style: italic;
+
+    }
+
+    .highlight{
+
+        text-transform: uppercase;
+        background-color: gold;
+    }
+    #
+    /*---Universal selectors--- are the selectors which selects everything in a page. it is not recommended to use universal selector. it always starts with a star symbol(*). If we use it, it always comes on the very top of the page.*/
+
+    /* * {
+
+    font-family: monospace;
+    }*/
+
+
+    /*---CSS always works in cascading style, which is from top to bottom.*/
+
+    /*---Form elements do not always have inheritance. Say for eg. form elements like button, input, textarea, select.*/
+
+    /*Always use specificity calcualator, which helps you to understand more on the specificity score and let you know which element or class or id will be ranked or implied.*/
+
+    /*--END OF DAY TWO--*/
+
+
+
+
+
+
+
 
 
