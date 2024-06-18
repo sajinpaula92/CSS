@@ -1,6 +1,38 @@
 p {
     /*Day 1 session 2*/ /* This is the comment format in CSS*/
-    font-size: 64px;
-    color: purple;
-    font-weight: 900;
+    /*font-size: 64px;*/
+    /*color: purple;*/
+    /*font-weight: 900;*/
 }
+
+/*Day 2 session 1*/ 
+
+/*Always use css in American English and not in anyother English. It may take the code but will not provide proper results, and at the same time it will not show the error as well and so we will have to be very cautious while typing.
+
+One way to find the error in our code, is to always use "w3c css validator" which detects issues and helps us to correct it.*/
+
+/*On day 2 we are going to learn more on css selectors*/
+
+body{
+
+    font-size: 22px;
+    
+    }
+    
+    /* css works with inheritance. It is nothing but css codes will apply for all the elements inside that set. say for eg. when we put font size of 22px the whole text inside the body elements will get the font size of 22 px.*/ 
+
+    /*---Element selectors--- are the first type of css selectors. It always selects and applies the code for all the contents of that same element. check the example below of paragraph element */
+
+    p{
+
+        color: purple;
+    }
+
+    /*---Class selectors--- are the second type of css selectors. We can use class names according to our wish but make sure it has some relation to the code we have. Class selectors always start with a period (.). Classes can be used more than once. When we use class selectors, they are more specific than a Element selector and so the rule of a class selector will be applied.*/
+
+    .gray{
+
+        color: gray;
+    }
+
+
