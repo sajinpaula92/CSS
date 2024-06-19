@@ -6,8 +6,7 @@ p {
     /*Day 1 session 2*/ /* This is the comment format in CSS*/
     /*font-size: 64px;*/
     /*color: purple;*/
-    /*font-weight: 900;*/
-}
+    /*font-weight: 900;*/}
 
 /*Day 2 session 1*/ 
 
@@ -17,50 +16,53 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
 /*On day 2 we are going to learn more on css selectors*/
 
-body{
+/*body{
 
     font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
     
-    }
+    }*/
     
     /* css works with inheritance. It is nothing but css codes will apply for all the elements inside that set. say for eg. when we put font size of 22px the whole text inside the body elements will get the font size of 22 px.*/ 
 
     /*---Element selectors--- are the first type of css selectors. It always selects and applies the code for all the contents of that same element. check the example below of paragraph element */
 
-    h2, h3,{/*This is group selection. we can select one ore more elements with a comma, in which we can give same values for them.*/
+    /*h2, h3 {
 
         color: blue;
-    }
+    }*/
 
-    p{
+    /*This is group selection. we can select one ore more elements with a comma, in which we can give same values for them.*/
+
+    /*p{
 
         color: purple;
-    }
+    }*/
 
     /*---Class selectors--- are the second type of css selectors. We can use class names according to our wish but make sure it has some relation to the code we have. Class selectors always start with a period (.). Classes can be used more than once. When we use class selectors, they are more specific than a Element selector and so the rule of a class selector will be applied.*/
 
-    .gray{
+    /*.gray{
 
         color: gray;
-    }
+    }*/
 
 
     /*Day 2 session 2*/ 
 
     /*---Id selectors--- are the third type of css selectors. We can use id names according to our wish but make sure it has some relation to the code we have. Id selectors always start with a hash symbol (#). Id names cannot be repeated in a file, it should be unique. When we use id selectors, they are more specific than a Element selector or a class selector, and so the rule of a id selector will be applied. It is not a good practice to use id's inside css.*/
 
-    #second{
+    /*#second{
 
         font-style: italic;
 
-    }
+    }*/
 
-    .highlight{
+    /*.highlight{
 
         text-transform: uppercase;
         background-color: gold;
-    }
-    #
+    }*/
+    
     /*---Universal selectors--- are the selectors which selects everything in a page. it is not recommended to use universal selector. it always starts with a star symbol(*). If we use it, it always comes on the very top of the page.*/
 
     /* * {
@@ -76,6 +78,53 @@ body{
     /*Always use specificity calcualator, which helps you to understand more on the specificity score and let you know which element or class or id will be ranked or implied.*/
 
     /*--END OF DAY TWO--*/
+
+    /*Day 3 session 1*/ 
+
+    /*On day 3 we are going to learn more on css Colors and CSS Units*/
+
+    body{
+
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1-5;
+        background-color: pink;
+        color: darkred; /*We can use rgb values instead of using color names for eg. it would be color:rgb(0,0,0) which would be black. We havent used that but this is the ruleset.*/
+
+        /*There is also rgba which is rgb alpha. It has only two values 0 and 1. 0 will be full transparent and 1 will be full without transparent. You can also use 50% tranparenecy by adding 0.5. check the ruleset below to know more.*/
+    }
+
+    p{
+
+        color: rgba(0, 0, 0, 0.5);
+
+        
+    }
+
+    /*There is also hexa decimal values. It starts from 0 and ends in F(alphabet F). For eg.. #000000 would be the color black and #FFFFFF would be the color white and #0000FF is color blue and it goes so on. We can also use this in shorthands like...#000 would be for black and #FFF would be for white and #00F would be for blue, but htis shorthand code works only if the numbers or characters are in pairs. That is why we have to remember that not all hexa codes have shorthands.*/
+
+    /*A small note - when you type the color names, on the right side it shows the hexa decimal codes.*/
+
+    /*We can find all the rgba, hexa decimal, hsla, hwb values in the color palete near the color names. */
+
+    /*The next set of color values are the hsl values which is H - Hue, S- Saturation, L- lightness. There is also HSLA in which A stands for Alpha.*/
+
+    /*There is a very important tool to select colors when you work with your project. It is a website called - COOLORS.CO. It gives all the colors availbale in the world and it also provides a contrast checker in which you can check the contrast with good scores and use it on your website. */
+
+    /*CSS UNITS*/
+
+    /*The very first rule about units is do not use absolute units, instead use relative units which will be more relavant and useful for the users.*/
+
+    /*But there are places and situations where we can use absolute units say for example borders. But mostly we use relative units.*/
+
+    /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units - check this page to learn more on css units.*/
+
+    /*Another main relative unit is the rem. It adjusts the font size according to the root element. One main point to keep in mind is that it doesnt change the value according to the parent element but it only changes value according to the root element.*/
+
+    /*REM refers to the root element but Em refers to the parent element*/
+
+    /*END OF DAY 3*/
+
 
 
 
