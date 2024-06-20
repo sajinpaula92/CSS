@@ -186,7 +186,73 @@ One way to find the error in our code, is to always use "w3c css validator" whic
         text-decoration: overline;
         text-decoration: line-through;
         text-decoration: none;
+
     }
+
+    /*Day 4 session 2*/
+
+    /*The text decoration with the value of none will also remove the hypertext aswell. Normally hypertext will be underlined but when we use text decoration as none it will remove the underline from the hypertext as well.*/
+
+    /*The next text decoration we are going to see is the text transformation*/
+
+    p{
+
+        text-transform: lowercase;
+        /*text-transform: uppercase;*/
+
+    }
+
+    /*The next text decoration we are going to see is the text align*/
+
+    p{
+
+        text-align: left; /*Here you can see that the text aligned to the left side properly but the right side is improper. This is the default setting.*/
+        /*text-align: justify;*/ /*Here you can see that the text in the left and right are aligned properly. Both left and right are aligned correctly.*/
+        /*text-align: right; */  /*Here you can see that the text aligned to the right side properly but the left side is improper. And the line starts from the right.*/
+
+    }
+
+    /*The next text decoration we are going to see is the text indent*/
+
+    p{
+
+        text-indent: 2em;
+               
+        
+        /*With this ruleset you can see that all the paragraphs starts with a space in the front. It depends on the value we give. If we give a bigger number, it starts with a bigger space in the front.*/
+
+        /*The more typography things you can learn from mdn or when you type text in css you will get more values, give a try on all those and you can learn gradually.*/
+
+    }
+
+    p{
+
+        text-shadow: 10px 10px 10px red; /*This sets more shadow behind the text.*/
+
+    }
+
+    /*The next property we are going to see is the line height*/
+
+    p{
+
+        line-height: 1.5; /*This increases the space in between the lines.*/
+        letter-spacing: 0.2em; /*This increases the space in between the letters. This is not used too often.*/
+        word-spacing: 1.5em; /*This increases the space in between the words. This is not used too often.*/
+    }
+
+
+    /*The next we are going to look at some font properties*/
+
+    p{
+
+        font-weight: 700;
+        font-style: italic; /*We also have oblique which is a stronger italic.*/
+        font-family: cursive; /*Some important font families are serif, sans-serif, monospace, cursive, fantasy. These are the generic families. The rulest will always have three families in our property value. It is because if the first font family is not available in your computer, it will take the second font family and even the second font family is not available in your computer it will take the third font family.*/
+
+
+    }
+
+    /*END OF DAY 4*/
 
 
 
