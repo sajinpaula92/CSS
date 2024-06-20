@@ -88,15 +88,15 @@ One way to find the error in our code, is to always use "w3c css validator" whic
         font-size: 22px;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1-5;
-        background-color: pink;
-        color: darkred; /*We can use rgb values instead of using color names for eg. it would be color:rgb(0,0,0) which would be black. We havent used that but this is the ruleset.*/
+        background-color: #e7f5f2;
+        color: #8b0000; /*We can use rgb values instead of using color names for eg. it would be color:rgb(0,0,0) which would be black. We havent used that but this is the ruleset.*/
 
         /*There is also rgba which is rgb alpha. It has only two values 0 and 1. 0 will be full transparent and 1 will be full without transparent. You can also use 50% tranparenecy by adding 0.5. check the ruleset below to know more.*/
     }
 
     p{
 
-        color: rgba(0, 0, 0, 0.5);
+        color: #00000080;
 
         
     }
@@ -123,7 +123,80 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*REM refers to the root element but Em refers to the parent element*/
 
+    /*There is also another two units which are vw and vh which is viewport width and viewport height.*/
+
     /*END OF DAY 3*/
+
+
+    /*Day 4 session 1*/
+
+    /*Today we are going to learn about CSS Box model and css Typography.*/
+
+    h4{
+
+        border: 2px dashed blue;
+        width: 50%;
+        font-size: 3rem;
+        padding: 0.5em;
+
+    }
+
+    /*There are differnt options for margins, if we give only margin as the property, the value we give wil be the same for all the margins, but if we need to give different values for different margins, we have margin-top/margin-bottom/margin-left/margin-right. In these properties we can give different values to have different margin sizes.*/
+
+    /*Look at this example to learn the shorthand for different margin vlaues. margin: 1.5em 2em 2em 1.5em. This is 1.5 em to the top and 2em to the right, and 2em to the bottom and 1.5em to the left. Also we can give margin: 1.5em 2em 1.5em, here it is represented as 1.5em on the top, 2 em on the right and left and 10.5em on the bottom. Also we can give like this as well, margin: 1.5em 2em, here it represents as 1.5em to the top & bottom and 2em to the right & left.*/
+
+    /*There is another keyword called "auto" for the margin property which works with right and left but will not work for top and bottom. What it does is, it will move the element or the container to the center. The syntax is as follows, margin: 3rem auto, now this will move the container to the centre */
+
+    /*We can use the same rules for padding as well.*/
+
+    /*There is an outline property, which forms an outline after the border. There is also another outline property which is outline offset.*/
+
+    .circle {
+
+        margin: 3rem auto;/*The keyword auto shifts the container to the center.*/
+        background-color: gold;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 50px; /*This property changes a square to a round container*/
+        outline: 2px solid red;
+        outline-offset: 0.25rem;
+    }
+
+
+    /*CSS Typography*/
+
+    /*Typography is nothing but the way the text is arranged and presented.*/
+
+    body{
+
+        padding: 15%;
+        font-size: 1.5rem;
+    }
+
+    /* input, button {
+
+        font: inherit; ---------- This ruleset is used to inherit the values from the parent or root element.
+    }*/
+
+
+    p{
+
+        text-decoration: underline;
+        text-decoration: overline;
+        text-decoration: line-through;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
