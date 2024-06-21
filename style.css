@@ -247,12 +247,81 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
         font-weight: 700;
         font-style: italic; /*We also have oblique which is a stronger italic.*/
-        font-family: cursive; /*Some important font families are serif, sans-serif, monospace, cursive, fantasy. These are the generic families. The rulest will always have three families in our property value. It is because if the first font family is not available in your computer, it will take the second font family and even the second font family is not available in your computer it will take the third font family.*/
+        font-family: cursive; /*Some important font families are serif, sans-serif, monospace, cursive, fantasy. These are the generic families. The rulest will always have three families in our property value. It is because if the first font family is not available in your computer, it will take the second font family and even the second font family is not available in your computer it will take the third font family. Font families which have space in their names should be given in quotation marks,*/
+    }
+
+    /*END OF DAY 4*/
+
+
+    /*Day 5 session 1*/
+
+    /*Today we are going to learn about styling links*/
+
+    a{
+
+        text-decoration: none;
+        cursor:pointer;
+        color: blue;
+    }
+
+    a:visited /*This is a pseudo class. Pseudo classes will have more specificity than normal elements.*/{
+
+        color: purple;
+    }
+
+    a:hover, a:focus /*This is also a pseudo class. Focus pseudo class is used for screen readers.*/{
+
+        color: dodgerblue;
+        background-color: gold;
+    }
+
+    a:active /*This is also a pseudo class*/{
+
+        color: #8b0000;
+    }
+
+    /*Next we are going to learn about list styles*/
+
+    ol{
+
+        list-style-type: lower-alpha; /*This shows the different style we can use for listing the lists like characters, nnumbers and other designs. Usually this will be decimals, which is numbers.*/
+    }
+
+    ul{
+
+        list-style-type:square;
+        text-align: center;
+        color: orangered;
+        line-height: 1.6;
+        list-style-image: url("..css/Check-Mark-PNG-File-Download-Free.png");
+        list-style: square url("..css/Check-Mark-PNG-File-Download-Free.png");
+        
+    }
+
+    ul li:nth-child(2) /*This nth child selects which number list should be changed.*/{
+
+        color:blue;
+    }
+
+    ::marker/*This is a pseudo element and not pseudo class. One colon is pseudo class and two colon is pseudo element*/{
+
+        color: black/*This keeps the text in the color we have given in the ul css but this will change the color of the bullet points.*/;
 
 
     }
 
-    /*END OF DAY 4*/
+    /*We have a property called content which changes the bullet points and gives the values what we give in that.let say for eg. content: "Only $5". This will be used as bullet points.*/
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
