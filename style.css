@@ -1,5 +1,11 @@
 
+*{
 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 
 p {
@@ -83,7 +89,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*On day 3 we are going to learn more on css Colors and CSS Units*/
 
-    body{
+    /*body{
 
         font-size: 22px;
         font-family: Arial, Helvetica, sans-serif;
@@ -94,7 +100,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
         /*There is also rgba which is rgb alpha. It has only two values 0 and 1. 0 will be full transparent and 1 will be full without transparent. You can also use 50% tranparenecy by adding 0.5. check the ruleset below to know more.*/
     }
 
-    p{
+    /*p{
 
         color: #00000080;
 
@@ -132,7 +138,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*Today we are going to learn about CSS Box model and css Typography.*/
 
-    h4{
+    /*h4{
 
         border: 2px dashed blue;
         width: 50%;
@@ -151,7 +157,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*There is an outline property, which forms an outline after the border. There is also another outline property which is outline offset.*/
 
-    .circle {
+    /*.circle {
 
         margin: 3rem auto;/*The keyword auto shifts the container to the center.*/
         background-color: gold;
@@ -168,7 +174,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*Typography is nothing but the way the text is arranged and presented.*/
 
-    body{
+    /*body{
 
         padding: 15%;
         font-size: 1.5rem;
@@ -180,7 +186,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
     }*/
 
 
-    p{
+    /*p{
 
         text-decoration: underline;
         text-decoration: overline;
@@ -195,7 +201,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*The next text decoration we are going to see is the text transformation*/
 
-    p{
+    /*p{
 
         text-transform: lowercase;
         /*text-transform: uppercase;*/
@@ -204,7 +210,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*The next text decoration we are going to see is the text align*/
 
-    p{
+   /* p{
 
         text-align: left; /*Here you can see that the text aligned to the left side properly but the right side is improper. This is the default setting.*/
         /*text-align: justify;*/ /*Here you can see that the text in the left and right are aligned properly. Both left and right are aligned correctly.*/
@@ -214,7 +220,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*The next text decoration we are going to see is the text indent*/
 
-    p{
+    /*p{
 
         text-indent: 2em;
                
@@ -225,7 +231,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     }
 
-    p{
+    /*p{
 
         text-shadow: 10px 10px 10px red; /*This sets more shadow behind the text.*/
 
@@ -233,21 +239,21 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*The next property we are going to see is the line height*/
 
-    p{
+    /*p{
 
         line-height: 1.5; /*This increases the space in between the lines.*/
-        letter-spacing: 0.2em; /*This increases the space in between the letters. This is not used too often.*/
-        word-spacing: 1.5em; /*This increases the space in between the words. This is not used too often.*/
+       /* letter-spacing: 0.2em; /*This increases the space in between the letters. This is not used too often.*/
+        /*word-spacing: 1.5em; /*This increases the space in between the words. This is not used too often.*/
     }
 
 
     /*The next we are going to look at some font properties*/
 
-    p{
+   /* p{
 
         font-weight: 700;
         font-style: italic; /*We also have oblique which is a stronger italic.*/
-        font-family: cursive; /*Some important font families are serif, sans-serif, monospace, cursive, fantasy. These are the generic families. The rulest will always have three families in our property value. It is because if the first font family is not available in your computer, it will take the second font family and even the second font family is not available in your computer it will take the third font family. Font families which have space in their names should be given in quotation marks,*/
+       /* font-family: cursive; /*Some important font families are serif, sans-serif, monospace, cursive, fantasy. These are the generic families. The rulest will always have three families in our property value. It is because if the first font family is not available in your computer, it will take the second font family and even the second font family is not available in your computer it will take the third font family. Font families which have space in their names should be given in quotation marks,*/
     }
 
     /*END OF DAY 4*/
@@ -257,7 +263,7 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     /*Today we are going to learn about styling links*/
 
-    a{
+    /*a{
 
         text-decoration: none;
         cursor:pointer;
@@ -266,28 +272,28 @@ One way to find the error in our code, is to always use "w3c css validator" whic
 
     a:visited /*This is a pseudo class. Pseudo classes will have more specificity than normal elements.*/{
 
-        color: purple;
+       /* color: purple;
     }
 
-    a:hover, a:focus /*This is also a pseudo class. Focus pseudo class is used for screen readers.*/{
+    /*a:hover, a:focus /*This is also a pseudo class. Focus pseudo class is used for screen readers.*/{
 
-        color: dodgerblue;
+       /* color: dodgerblue;
         background-color: gold;
     }
 
-    a:active /*This is also a pseudo class*/{
+    /*a:active /*This is also a pseudo class*/{
 
-        color: #8b0000;
+       /* color: #8b0000;
     }
 
     /*Next we are going to learn about list styles*/
 
-    ol{
+    /*ol{
 
         list-style-type: lower-alpha; /*This shows the different style we can use for listing the lists like characters, nnumbers and other designs. Usually this will be decimals, which is numbers.*/
     }
 
-    ul{
+    /*ul{
 
         list-style-type:square;
         text-align: center;
@@ -301,18 +307,28 @@ One way to find the error in our code, is to always use "w3c css validator" whic
     ul li:nth-child(2) /*This nth child selects which number list should be changed.*/{
 
         color:blue;
-    }
+    }*/
 
-    ::marker/*This is a pseudo element and not pseudo class. One colon is pseudo class and two colon is pseudo element*/{
+   /* ::marker/*This is a pseudo element and not pseudo class. One colon is pseudo class and two colon is pseudo element*/{
 
-        color: black/*This keeps the text in the color we have given in the ul css but this will change the color of the bullet points.*/;
+        /*color: black/*This keeps the text in the color we have given in the ul css but this will change the color of the bullet points.*/;
 
 
     }
 
     /*We have a property called content which changes the bullet points and gives the values what we give in that.let say for eg. content: "Only $5". This will be used as bullet points.*/
 
+    /*Day 5 session 2*/
+
+    Mini Project 
+
+    /*As it is cascading, i have added universal rulset in the extreme top. Now continue with body element*/
+
+   This mini project is done one new css file and with new html file.
+
     
+
+
 
 
 
