@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative; /* refer class absolute*/
+}
+
+.inner-container {
+
+    border: 3px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /*position: relative; /* refer class absolute*/*/
+}
+
+.box {
+
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {/*Absolute position always need a relative position. it always need an ancestor. It always picks the ancestor which is very close to it. If we have a position ruleset in inner container, it will take that bcoz that is very close.*/
+
+    background-color: #00f;
+    position: absolute; /* position:static; --- This ruleset type will not change anything. This will be there in any situation.*/
+    top: 0px;
+    left: 0px; /*If we need to remove something from the page we can use  this left property and give some random value in -. May be-10000px, it will hide the absolute class. We can use this ruleset or property instead of opacity property with a value of 0 or display property with a value of none.*/
+    z-index: 1; /*This brings the absolute class above the fixed class if it overlaps.*/
+    
+}
+
+.relative {/*Relative position is always relative to its parent conatiner.*/
+
+    background-color: red;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+
+    background-color: green;
+    position: fixed; /*Fixed position stays in the fixed position even if we scroll the page.*/
+    top: 100px;
+}
+
+.sticky {
+
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+
+
+/***///////////////////////////////****/
+
+/*Example two*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+
+    height: 100vh;
+}
+
+.blue {
+
+    background-color: #00f;
+}
+.red {
+
+    background-color: red;
+}
+.green {
+
+    background-color: green;
+}
+
+header,footer {
+
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    
+}
+
+header {
+
+    position: sticky;
+    top:0;
+    font-size: 5rem;
+}
+
+footer {
+
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 3rem;
+}
+
+a:visited {
+
+    color: #fff;
+
+}
+
+.social {
+
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left:0;
+    z-index: 1; /*This lets the button element to stay always on top.*/
+}
+
+
+
+/*End of Day 7 session 1*/
+
