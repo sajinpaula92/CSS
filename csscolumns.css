@@ -1,0 +1,54 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* The next topic we are gong to learn today is CSS Columns*/
+
+.columns {
+
+    column-count: 4;
+    column-width: 250px;    
+    columns: 4 250px; /*This is the shorthand for the above two properties.*/
+    column-rule: 3px solid #333;
+    column-gap: 3rem;
+}
+
+.columns p {
+
+    margin-top: 0;
+}
+
+.columns h3 {
+
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;/*This will not split the header into two different pieces when we resize the browser*/
+    break-before: column; /*This will keep the header in the top. This is nota  good idea to use, if we shrinkl the browser.*/
+}
+
+.columns .quote {
+
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all; /*This is nothing but this will get the element moved to the middle of the column.*/
+
+
+}
+
+.nowrap {
+
+    white-space: nowrap;/*What this does is, this will not break the author name to a different line, which means even if someone resize the browser the dash symbol and the author name will always come together.*/
+}
+
+/*End of Day 6 session 1*/

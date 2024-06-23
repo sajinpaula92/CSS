@@ -1,0 +1,72 @@
+/*Day 6 Session*/
+/*Today we are going to learn about Display Property*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/*p {
+
+   background-color: lightgray;
+}
+
+.opposite {
+
+    background-color: #333;
+    color: whitesmoke;
+    padding: 1rem;
+}*/
+
+/*We cannot add margin top property for an inline element as default. And also we cannot add height property for an inline element as default. But if we add the display proeprty. This may change.*/
+
+/*We can use display properties as inline, block and inline-block. All of these have their own features.*/
+
+/* The next topic we are gong to learn today is CSS Floats*/
+
+
+/*.block {
+
+    width: 30vw;
+    height: 30vw;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.left {
+
+    float: left;
+    margin-right: 1rem;
+}
+.right {
+
+    float: right;
+    margin-left: 1rem;
+}
+
+.clear {
+
+    clear: both;
+}
+
+section {
+
+    background-color: bisque;
+    border: 1px dotted #000;
+    padding: 1rem;
+    display: flow-root; /*This is the current new method of floating a whole paragraph and a float element.
+}*/
+
+
+/* The next topic we are gong to learn today is CSS Columns*/
+
+.columns {
+
+    column-count: 4;
+
+}
