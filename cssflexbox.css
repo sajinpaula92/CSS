@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem; /*This forms gap in between the boxes.*/
+    justify-content: center; /*Justiy-content: "flex-end"; This moves the contents inside the container to the end of container. If we give "flex start" as the value it will be at the beginning of the container. By default this will be always in flex start. If we set the value to "flex center", it will be in the middle of the container.The next value which can be given is "space around". This spaces around equally at the start and end of the container. The next value which can be given is "space between". It fills the conatiner with equal spaces in the boxs but at the start and end there will not be any space. The next value which can be given is "space evenly". This gives even spaces in start and end and also in between all boxes. */
+
+    align-items: flex-start;/*align-item: "flex-start" will set the box on the top. If we set the value as "flex-end" all the boxes will be moved to the bottom.  If we set the value as "center" all the boxes will be moved to the center.*/
+    
+    flex-direction: column; /*flex-direction: "column". This will change all the boxes vertically. By default the flex-direction value would be "row". If we set the value as "row-reverse" all the boxes will be reversed. That means, the box no. 6 comes first nad the box no.1 will be at last. Likewise we can give "column-revese" aswell.It works in the same format.*/
+
+    flex-wrap: wrap; /*This warps the boxes if we need to resize the browser. We also have a shorthand for both of this properties (flex direction and flex wrap). The new property is "flex-flow: row wrap;". This will funtion like the other two properties. But the values should be always given in this order. The first is flex direction value and the next is flex wrap value.*/
+
+    align-content: space-evenly;/*Here also we can give same vlaues as justify content and this works similar to that.*/
+}
+
+.box {
+
+    min-width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /*This moves the values inside the box to the center.*/
+
+    /*We also have the below listed properties:display:
+    
+       flex-grow:1;
+       flex-basis: 100px;
+       flex-shrink:1;
+       flex: 1 1 250px ------ This is the shorthand for the above properties. The first vlaue is for flex grow and the second value is for flex shrink and the third value is for flex basis.*/
+}
