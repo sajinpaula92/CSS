@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Begin Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*End Reset*/
+
+body {
+
+    font: 1.5rem "Nunito", sans-serif;/*This is the shorthand for font size and font family.*/
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569); /*This starts from the centre and move outwards instead of the other linear gradient which is from top to bottom or so.*/
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer {
+
+    display: flex;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+
+    position: sticky;
+    background-color: #1E293B;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    border: 2px solid #000;
+}
+
+main {
+
+    flex-grow: 1;
+}
+
+footer {
+
+    bottom:0;
+}
+
+/* SMALL */
+
+@media screen and (min-width:576px) {
+
+    body {
+
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+
+    nav {
+
+        display: none;
+    }
+}
+
+/* MEDIUM*/
+@media screen and (min-width:768px) {
+
+    body {
+
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+
+    
+}
+/* LARGE*/
+@media screen and (min-width:992px) {
+
+    body {
+
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+
+    
+}
+
+/* EXTRA LARGE*/
+@media screen and (min-width:1200px) {
+
+    body {
+
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+
+    
+}
+
+/* MOBILE DEVICES LANDSCAPE*/
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+
+    body {
+
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+
+    h1, h2 {
+
+        font-size: 1.5rem;
+
+    }
+
+    nav {
+
+        display: none;
+    }
+
+    
+}
+
+
+
+
+/*This the syntax of media query*/
+
+/*@media media type and (condition: breakpoint) {  //CSS Rules}*/
+
+/*End of syntax of media query*/
+
+
+

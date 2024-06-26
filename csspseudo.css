@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Begin Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*End Reset*/
+
+body {
+
+    font: 1.5rem "Nunito", sans-serif;/*This is the shorthand for font size and font family.*/
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569); /*This starts from the centre and move outwards instead of the other linear gradient which is from top to bottom or so.*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*Pseudo classes and Pseudo elements*/
+
+/*we can do nav :is(a:hover, a:focus). We can have two or more pseudo calsses like this instead of having them seperately.*/
+
+/*We can also do nav a:any-link. any -link is a pseudo element which includes a:link and a:visited*/
+
+/*Instead of using is pseudo class, there is also another pseudo class which is where. The main difference is the where pseudo class do not have any specificity.*/
+
+/*We also have target class, in which we give give some values, it will reflect only for that selected profile.*/
+
+/*We also have not pseudo class. In which it cross check the attributes and if it is missing it will notify you. For eg. .card img:not([alt]){border:10px solid red;}. Now what is written here is if i miss any alt attribute in img element it should notify me with red color and that is easy for me to cross check and give the alt tag.*/
+
+/*Next pseudo class is nth child. The nth child pseudo class wiull be based on the html file. In that we can give the values like odd and even it selects the profile accordingly.*/
+
+/*The next pseudo class we have is the :after and :before pseudo class. Ehatever content we add here will be added to the content on the page but will not be able to select taht content.*/
