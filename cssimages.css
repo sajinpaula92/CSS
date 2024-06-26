@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Begin Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img { /*This is like a kind of reset for img elements. */
+
+    display: block;
+}
+/*End reset*/
+
+/*Begin Utility Classes*/
+
+.nowrap {
+
+    white-space: nowrap;
+}
+
+.offscreen {
+
+    position: absolute;
+    left: -10000px;
+}
+
+/*End Utility Classes*/
+
+body {
+
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    
+    /*Example Three*/
+    /* background-color: aliceblue; 
+    background-image: url('../img/bubbles.png'), linear-gradient(to left, steelblue, #fff); /*The values you can give is the direction, and diffrent colors./
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    background-size: 20% auto; */
+
+    /*End of example three*/
+
+    /*we can give also the background as a shorthand by including all the values of the properties background image, background repeat, background position.*/
+}
+
+.hero {
+
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgb(251, 210, 156);
+    background-image: url('../img/map-2176x1451.png');
+    background-repeat: repeat; /*The value repeat is default. We can give also norepeat, which will not repeat the image again and again, it will load only once. Also you can give repeat-y, which repeats the image only in the y axis(vertically). Also you can give repeat-x, which repeats the image only in the x axis(horizontally).*/
+    background-position: top left;/*If it is a large image and if we need only one part of the image to be shown as background image, we can use this property.*/
+    background-size:cover ; /*This helps the background image to cover the whole page. There is also a value called contain which repeats teh image for two times.*/
+}
+
+.h1 {
+
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;/*This helps the text to be shown clearly. The values are given this way x-axis 2px, y-axis 2px, blur effect 5px and then the color.*/
+    background-color: hsla(0, 0%, 0%, 0.404);
+    padding: 0.25rem;
+    border-radius: 10px;
+}
+
+.profile-pic-figure {
+
+    width: 35%;
+}
+
+.profile-pic-figure img {
+
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+.example {
+
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+.example img {
+
+    width: 25%;
+    height: auto;
+}
+
+.clip {
+
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 100px;
+    background-image: url('../img/scenic-2200x1331.png');
+    background-position: Top center;
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text; /*This is based on the browser we use. Firefox dont need this but other browsers need this webkit. */
+    color: hsla(0, 0%, 0%, 0.199); /*Or you can give hte value as transparent without giving a color.*/
+}

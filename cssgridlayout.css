@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 50px auto 75px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd hd"
+                          "mn mn mn mn mn mn mn sb sb"
+                          "ft ft ft ft ft ft ft ft ft";
+    
+    gap: 0.5rem;
+
+
+}
+
+.el {
+
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.header {
+
+    grid-area: hd;
+}
+
+.sidebar {
+
+    grid-area: sb;
+    background-color: #00f;
+}
+
+.footer {
+
+    grid-area: ft;
+    background-color: red;
+}
+
+
+.container {
+
+    grid-area: mn;
+    min-height: 400px;
+    display: grid;
+    /*grid-auto-flow: row; /*We can make this as row and column.*/
+    grid-template-columns: 2fr 1fr 2fr; /*These are fractions. We dont have to use px here. We can also give the values with the mix of px and fr. We can give the value in this format also if we have equal values. grid-template-columns: repeat(4, 1fr);. But this value can also be in patterns like this. grid-template-columns: repeat(2, 1fr 2fr). so here the 1st, 3rd, 5th columns have 1fr and 2nd, 4th, 6th columns have 2fr. */
+    grid-auto-rows: minmax(150px, auto); /*Now what is happening here is the auto function lets the container to grow to the min height mentioned above, but it will not come lesser than 150px.*/
+
+    /*There is oppposite properties and values for the above ones as well. Like grid-template-columns, we do have grid-template-rows and at the same time like grid-auto-rows we have grid-auto-columns as well. */
+
+    row-gap: 1em;
+    column-gap: 1rem; /*There is also a property called gap which sets rows first and then columns. And we can give the ruleset like this. gap: 1rem;(which applies equal space for rows and columns). We can also give it as gap: 1rem 0.5rem;(which applies 1rem space for rows and 0.5rem space for columns)*/
+}
+
+.box {
+
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.box:first-child {
+
+    background-color: #00f;
+    grid-column-start: 1; /*The shorthand for this column propert's start and end is, grid-column: 1 / 4;*/
+    grid-column-end: 4;
+    grid-row-start: 1; /*The shorthand for this row property's start and end is, grid-row: 1 / 3;*/
+    grid-row-end: 3;
+
+    display: grid;
+    align-content: center; /*This brings the content in the box to the middle, like wise we have start and end values as well.*/
+    justify-content: center; /*This brings the content in the box to the middle, like wise we have start and end values as well. Now the shorthand for these both properties is place-content: center center;. Now if we put only one value, it takes for both the properties.*/
+}
+
+.box:nth-child(2) {
+
+    background-color: purple;
+    grid-column: 1/5;
+    grid-row: 3/4;
+
+}
+
