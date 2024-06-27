@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 1.5rem;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main {
+
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div {
+
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    display: grid;
+    place-content: center;
+}
+
+/*TRANSFORMS*/
+
+div:first-child {
+
+    background-color: dodgerblue;
+    /* transform: translateX(-50%); /*translatex option moves to right or left according to the value given.*/ 
+    /*transform: rotatex(180deg); /*rotatex flips from top to bottom according to the value given*/
+    /*transform: scaleX(120%); /*scalex grows or shrinks in right and left according to the value given*/
+    /*transform: skewX(-20deg); /*skewx transforms the right and left borders and forms a lineant box according to the value given*/
+}
+
+div:nth-child(2) {
+
+    background-color: yellow;
+    /* transform: translateY(-2rem); /*translatey option moves to up or down according to the value given.*/ 
+    /*transform: rotatey(180deg); /*rotatey flips from left to right according to the value given*/
+    /*transform: scaleY(120%); /*scaley grows or shrinks in top and bottom according to the value given*/
+    /*transform: skewy(-20deg); /*skewy transforms the top and bottom borders and forms a lineant box according to the value given*/
+}
+
+div:nth-child(3) {
+
+    background-color: limegreen;
+    /* transform: translate(100%, -2rem); /*translate alone is the shorthand for x and y, in that the first value is for x and the second value is for y.*/
+    /*transform: rotateZ(90deg); /*rotatez or just rotate both are same. It just flips right to left in clockwise direction, according to the value given*/
+    /*transform: scale(120%, 120%); /*scale grows or shrinks in top and bottom and right and left according to the value given*/
+    /*transform: skew(-20deg); /*skew transforms all the borders(right, left, top and bottom) and forms a lineant box according to the value given*/
+}
+
+/*TRANSITIONS*/
+
+div:hover {
+
+    background-color: midnightblue;
+    transition-property: background-color, transform;
+    transition-duration: 2s, 3s; /*This is the value how speed the transition should be.*/
+    transition-delay: 0.5s;/*This slows down the transition.*/
+    transition-timing-function: linear;
+}
+
+div:last-child:hover {
+
+   /* transform: rotate(180deg);
+}
+
+/*ANIMATIONS*/
+
+.animate {
+
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 5; /*This option is for how many times the same animations has to be repeated.*/
+    animation-direction: alternate; /*This strats rfom the right for the first time and for the next time it starts from the left and so on.*/
+    animation-fill-mode: forwards; /*This value will not bring the animation to a stop stage it will continuesly work till the iteration count.*/
+    /*And also we have shorthand for all these above properties in one ruleset.*/
+}
+
+@keyframes slide { /*The identifier is the animation name.*/
+    0% {/*This is at the beginning of the animation*/
+
+    transform: translateX(0);
+    }
+
+    33% { /*This is at the one third of the animation*/
+
+    transform: translateX(600px) rotate(180deg);
+    }
+
+    66% { /*This is at the two third of the animation*/
+
+    transform: translateX(-600px) rotate(-180deg);
+    }
+    100% { /*This is at the end of the animation*/
+
+    transform: translateX(0);
+    background-color: rebeccapurple;
+    }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//VARIABLES//*/
+
+:root {
+
+    /*FONT*/
+
+    --FF: "Roboto", sans-serif;
+    --FS: 1.5rem; /*So, all these three values are with different font sizes. You can always use any of these values for any sizes in the page. One main thing to remember is, if we are using any property or ruleset again and again in your code, you can use this variable concept and define values. You can use this varible concept literlaly for anything like defining padding, margin, borders, shadows and so on... You can use a variable inside another ruleset. say for eg. you define a varible set like this also.., --SHADOWS: 0 6px 5px -5px var(--LIGHT-COLOR). Here we have used the light color variable in another variable we have set. */
+    --FS-XL: 3rem;
+    --FS-XXL: 5rem;
+
+    /*COLOR*/     /*WE can set many variables here and we can use this in the whole project whenever needed. variables always start with two daashes at first(--).*/
+    --BGCOLOR: #475569;
+    --ALT-BGCOLOR: #1E293B;
+    --RADIAL-COLOR: whitesmoke; /*You can use two variables with same value in it. Likewise you can use any color for any propertxy or value. this is used when we have same color repeated many times in your file.*/
+    --lIGHT-COLOR: whitesmoke;
+    --DARK-COLOR: #000;
+    --SPECIAL-COLOR: rgb(245, 220, 169);
+
+    /*CLASS SQUARE*/
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw);
+
+    /*GENERAL*/
+
+    --PADDING: 0.5rem;
+    --SHAWODS: 0 6px 5px -5px var(--DARK-COLOR);
+    --BORDERS: 2px solid var(--DARK-COLOR);
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+
+        --BGCOLOR: #000;
+        --ALT-COLOR: #333;
+        --RADIAL-COLOR: rgb(204, 202, 202);
+        --SQUARE-BGCOLOR: rgb(221, 189, 221);
+    }
+}
+
+body {
+
+    min-height: 100vh;
+    padding: 20px;
+    font: var(--FS) var(--FF);
+
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient (whitesmoke, var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+
+}
+
+header, main, footer {
+
+    position: sticky;
+    background-color: var(--ALT-BGCOLOR);
+    color:var(--lIGHT-COLOR);
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+h1 {
+
+    margin-top: 1rem;
+    padding: 1rem;
+    border: var(--BORDERS);
+    background-color: var(--lIGHT-COLOR);
+    color: #000;
+}
+
+nav {
+
+    border: var(--BORDERS);
+    background-color: var(--lIGHT-COLOR);
+    color: #000;
+}
+
+footer {
+
+    border: var(--BORDERS);
+    background-color: var(--SPECIAL-COLOR);
+    color: #000;
+}
+
+/*Functions*/
+
+/*We can give font size in this format. font-size: min(2.25rem, 3vh); now this a function. This function will take whichever is the minimum value and gives it according to the browser needs. Anything inside a parenthesis is a function. We can also give max value for the font size. font-size: max(1.75rem, 3vh). This function will take whichever is the maximum value and gives it according to the browser needs. There is also funtion for font size which includes both minimum and maximum, which is clamp. font-size: clamp(1.75rem, 3vh, 2.25rem). This function will take whichever is the maximum value and whichever is the minimum value and gives it according to the browser needs.  */
